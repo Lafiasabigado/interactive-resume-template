@@ -12,24 +12,24 @@ import type { ResumeConfig } from './types'
 export const resumeConfig: ResumeConfig = {
   // ===== PERSONAL INFO =====
   personal: {
-    name: 'Jane Doe',
-    photo: '/images/photo.jpg', // Place your photo in public/images/
+    name: 'Lafia Sabi Gado',
+    photo: '/images/lafia.png', // Place your photo in public/images/
     photoBackEmoji: '👩‍💻', // Shown when clicking the photo (3D flip)
     title: {
       en: 'Fullstack Developer',
-      fr: 'Développeuse Fullstack',
+      fr: 'Développeur Fullstack',
     },
     subtitle: {
-      en: '5 years of experience',
-      fr: '5 ans d\'expérience',
+      en: '4 years of experience',
+      fr: '4 ans d\'expérience',
     },
-    location: 'Paris, France',
+    location: 'Parakou, Bénin',
   },
 
   // ===== SEO (used in <head> meta tags) =====
   seo: {
-    title: 'Jane Doe — Fullstack Developer',
-    description: 'Interactive resume of Jane Doe, Fullstack Developer specializing in React and TypeScript.',
+    title: 'Lafia Sabi Gado — Fullstack Developer',
+    description: 'Interactive resume of Lafia Sabi Gado, Fullstack Developer specializing in React and Django.',
   },
 
   // ===== LANGUAGES =====
@@ -44,11 +44,11 @@ export const resumeConfig: ResumeConfig = {
 
   // ===== CONTACT =====
   contact: [
-    { type: 'github', label: 'janedoe', href: 'https://github.com/janedoe' },
-    { type: 'linkedin', label: 'Jane Doe', href: 'https://linkedin.com/in/janedoe' },
-    { type: 'email', label: 'jane@example.com' },
-    { type: 'phone', label: '+33 6 12 34 56 78' },
-    { type: 'location', label: 'Paris, France' },
+    { type: 'github', label: 'lafia-sabi-gado', href: 'https://github.com/Lafiasabigado' },
+    { type: 'linkedin', label: 'Lafia Sabi Gado', href: 'https://linkedin.com/in/lafia-sabi-gado-03910a292/' },
+    { type: 'email', label: 'lafiasabigado97@gmail.com' },
+    { type: 'phone', label: '+229 01 56 25 96 32' },
+    { type: 'location', label: 'Parakou, Bénin' },
   ],
 
   // ===== SKILLS =====
@@ -59,6 +59,7 @@ export const resumeConfig: ResumeConfig = {
       items: [
         { name: { en: 'French', fr: 'Français' }, level: { en: 'Native', fr: 'Natif' } },
         { name: { en: 'English', fr: 'Anglais' }, level: { en: 'Professional', fr: 'Professionnel' }, details: 'TOEIC 910' },
+        {name: { en: 'Bariba', fr: 'Bariba' }, level: { en: 'Native', fr : 'Natif' } },
       ],
     },
     {
@@ -76,6 +77,7 @@ export const resumeConfig: ResumeConfig = {
       items: [
         { name: 'Node.js' },
         { name: 'Python' },
+        { name: 'Django' },
       ],
     },
     {
@@ -109,15 +111,15 @@ export const resumeConfig: ResumeConfig = {
   experiences: [
     {
       id: 'company-a',
-      company: { en: 'TechCorp', fr: 'TechCorp' },
-      role: { en: 'Senior Fullstack Developer', fr: 'Développeuse Fullstack Senior' },
+      company: { en: 'Tout-Talent', fr: 'Tout-Talent' },
+      role: { en: 'Fullstack Developer', fr: 'Développeur Fullstack' },
       type: { en: 'Permanent', fr: 'CDI' },
-      period: { en: '2022 - Present', fr: '2022 - Présent' },
+      period: { en: '2025 - Present', fr: '2025 - Présent' },
       description: {
-        en: 'Led the development of a SaaS platform used by 10k+ users. Built microservices architecture and modern React frontend.',
-        fr: 'Direction du développement d\'une plateforme SaaS utilisée par 10k+ utilisateurs. Architecture microservices et frontend React moderne.',
+        en: 'Led the development of a SaaS platform used by 3k+ users. Built microservices architecture and modern React frontend.',
+        fr: 'Direction du développement d\'une plateforme SaaS utilisée par 3k+ utilisateurs. Architecture microservices et frontend React moderne.',
       },
-      techs: ['React', 'TypeScript', 'Node.js', 'PostgreSQL', 'Docker', 'AWS'],
+      techs: ['TypeScript', 'PostgreSQL', 'Django', 'Angular'],
       isHighlighted: true,
       details: {
         context: {
@@ -148,83 +150,31 @@ export const resumeConfig: ResumeConfig = {
         },
         training: {
           en: [
-            'AWS Solutions Architect certification',
-            'Internal training on Kubernetes orchestration',
+            'OpenClassrooms React course (5/5)',
+            'OpenClassrooms Django course (5/5)',
           ],
           fr: [
-            'Certification AWS Solutions Architect',
-            'Formation interne sur l\'orchestration Kubernetes',
+            'Formation OpenClassrooms React (5/5)',
+            'Formation OpenClassrooms Django (5/5)',
           ],
         },
         env: {
-          en: 'React / TypeScript / Node.js / PostgreSQL / GraphQL / Redis / Docker / AWS / GitHub Actions / Datadog',
-          fr: 'React / TypeScript / Node.js / PostgreSQL / GraphQL / Redis / Docker / AWS / GitHub Actions / Datadog',
-        },
-      },
-    },
-    {
-      id: 'company-b',
-      company: { en: 'WebAgency', fr: 'WebAgency' },
-      role: { en: 'Frontend Developer', fr: 'Développeuse Frontend' },
-      type: { en: 'Permanent', fr: 'CDI' },
-      period: { en: '2019 - 2022', fr: '2019 - 2022' },
-      description: {
-        en: 'Developed responsive web applications for various clients. Specialized in React and Angular projects.',
-        fr: 'Développement d\'applications web responsives pour divers clients. Spécialisée en projets React et Angular.',
-      },
-      techs: ['React', 'Angular', 'TypeScript', 'SCSS'],
-      details: {
-        context: {
-          en: 'Digital agency with 20+ clients across various industries (retail, finance, healthcare). Team of 12 developers, working on 3-4 projects simultaneously.',
-          fr: 'Agence digitale avec 20+ clients dans différents secteurs (retail, finance, santé). Équipe de 12 développeurs, travaillant sur 3-4 projets simultanément.',
-        },
-        tasks: {
-          en: [
-            'Built 15+ client-facing web applications from scratch',
-            'Created and maintained a shared design system used across all agency projects',
-            'Implemented complex form workflows with multi-step validation',
-            'Optimized web performance achieving 90+ scores on Core Web Vitals',
-            'Integrated third-party APIs (payment, CRM, analytics)',
-            'Set up Storybook documentation for reusable components',
-            'Collaborated closely with UX designers to translate Figma mockups into pixel-perfect UIs',
-          ],
-          fr: [
-            'Développement de 15+ applications web clients from scratch',
-            'Création et maintenance d\'un design system partagé utilisé sur tous les projets de l\'agence',
-            'Implémentation de workflows de formulaires complexes avec validation multi-étapes',
-            'Optimisation des performances web avec scores 90+ sur les Core Web Vitals',
-            'Intégration d\'APIs tierces (paiement, CRM, analytics)',
-            'Mise en place de la documentation Storybook pour les composants réutilisables',
-            'Collaboration étroite avec les designers UX pour traduire les maquettes Figma en interfaces pixel-perfect',
-          ],
-        },
-        training: {
-          en: [
-            'Angular Advanced workshop (2 days)',
-            'Accessibility (WCAG 2.1) certification',
-          ],
-          fr: [
-            'Workshop Angular Avancé (2 jours)',
-            'Certification Accessibilité (WCAG 2.1)',
-          ],
-        },
-        env: {
-          en: 'React / Angular / TypeScript / SCSS / Tailwind CSS / Storybook / Figma / GitLab CI',
-          fr: 'React / Angular / TypeScript / SCSS / Tailwind CSS / Storybook / Figma / GitLab CI',
+          en: 'Angular / TypeScript / Django/ PostgreSQL / GraphQL / Redis / Docker/ GitHub Actions / Datadog',
+          fr: 'Angular / TypeScript / Django / PostgreSQL / GraphQL / Redis / Docker / GitHub Actions / Datadog',
         },
       },
     },
     {
       id: 'internship',
-      company: { en: 'StartupXYZ', fr: 'StartupXYZ' },
-      role: { en: 'Fullstack Developer Intern', fr: 'Stagiaire Développeuse Fullstack' },
+      company: { en: 'Intside', fr: 'Intside' },
+      role: { en: 'Fullstack Developer Intern', fr: 'Stagiaire Développeur Fullstack' },
       type: { en: 'Internship', fr: 'Stage' },
-      period: { en: '2018 - 2019', fr: '2018 - 2019' },
+      period: { en: '2024 - 2025', fr: '2024 - 2025' },
       description: {
-        en: 'Contributed to the development of an e-commerce platform. Gained experience in fullstack development.',
-        fr: 'Contribution au développement d\'une plateforme e-commerce. Acquisition d\'expérience en développement fullstack.',
+        en: 'Gained experience in fullstack development.',
+        fr: 'Acquisition d\'expérience en développement fullstack.',
       },
-      techs: ['React', 'Node.js', 'MongoDB', 'Machine Learning'],
+      techs: ['React', 'Vue.js', 'Django',],
       details: {
         context: {
           en: 'Early-stage startup (seed round), small team of 5 developers building an e-commerce platform from the ground up. Fast-paced environment with weekly releases.',
@@ -260,66 +210,75 @@ export const resumeConfig: ResumeConfig = {
   projects: [
     {
       id: 'project-a',
-      title: { en: 'WeatherApp', fr: 'WeatherApp' },
+      title: { en: 'Brainwritor', fr: 'Brainwritor' },
       description: {
         en: 'A real-time weather dashboard built with React and OpenWeather API.',
-        fr: 'Un tableau de bord météo en temps réel construit avec React et l\'API OpenWeather.',
+        fr: 'Un assistant rédactionnel IA de documents, construit avec Next.Js',
       },
       techs: ['React', 'TypeScript'],
-      url: 'https://weather-app.example.com',
-      github: 'https://github.com/janedoe/weather-app',
+      url: 'https://kloo.me/brainwritor',
+      github: 'https://github.com/Lafiasabigado/Brainwritor',
     },
     {
       id: 'project-b',
-      title: { en: 'TaskManager', fr: 'TaskManager' },
+      title: { en: 'Tikonna', fr: 'Tikonna' },
       description: {
-        en: 'A Kanban-style task management tool with drag-and-drop.',
-        fr: 'Un outil de gestion de tâches style Kanban avec glisser-déposer.',
+        en: 'A website for the Tikonna association, built with React and Node.js.',
+        fr: 'Site web de l\'association Tikonna.',
       },
       techs: ['React', 'Node.js', 'PostgreSQL'],
-      github: 'https://github.com/janedoe/task-manager',
+      url: 'https://tikonna.org',
+      github: 'https://github.com/Lafiasabigado/Tikonna',
     },
+    {
+      id: 'project-c',
+      title: { en: 'Personal Portfolio', fr: 'Portfolio Personnel' },
+      description: {
+        en: 'My personal portfolio website showcasing my projects and experience.',
+        fr: 'Mon site portfolio personnel présentant mes projets et expériences.',
+      },
+      techs: ['Next.js', 'TypeScript', 'Tailwind CSS'],
+      url: 'https://kloo.me/lafia',
+      github: 'https://github.com/Lafiasabigado/lafiasabigado.dev',
+    }
   ],
 
   // ===== EDUCATION =====
   education: [
     {
-      school: { en: 'University of Paris', fr: 'Université de Paris' },
-      degree: { en: 'Master in Computer Science', fr: 'Master Informatique' },
-      specialty: { en: 'Web & Mobile Development', fr: 'Développement Web & Mobile' },
-      period: '2017 - 2019',
-    },
-    {
-      school: { en: 'University of Paris', fr: 'Université de Paris' },
-      degree: { en: 'Bachelor in Computer Science', fr: 'Licence Informatique' },
-      period: '2014 - 2017',
+      school: { en: 'University of Parakou', fr: 'Université de Parakou' },
+      degree: { en: 'Bachelor in Computer Science', fr: 'Licence en Informatique de Gestion' },
+      specialty: { en: 'Informatics', fr: 'Informatique' },
+      period: '2022 - 2025',
     },
   ],
 
   // ===== HOBBIES (optional) =====
   hobbies: [
     {
-      title: { en: 'Photography', fr: 'Photographie' },
+      title: { en: 'Football', fr: 'Football' },
       details: [
-        { en: 'Street photography', fr: 'Photo de rue' },
-        { en: '5 years', fr: '5 ans' },
-      ],
-    },
-    {
-      title: { en: 'Hiking', fr: 'Randonnée' },
-      details: [
-        { en: 'Mountain trails', fr: 'Sentiers de montagne' },
+        { en: 'Football Player', fr: 'Joueur de football' },
       ],
     },
     {
       title: { en: 'Open Source', fr: 'Open Source' },
-    },
-    {
-      title: { en: 'Guitar', fr: 'Guitare' },
       details: [
-        { en: '3 years', fr: '3 ans' },
+        { en: 'Contributor to several open source projects on GitHub', fr: 'Contributeur à plusieurs projets open source sur GitHub' },
       ],
     },
+    {
+      title: { en: 'Music', fr: 'Musique' },
+      details: [
+        { en: 'Rap,Pop', fr: 'Rap,Pop' },
+      ],
+    },
+    {
+      title: { en: 'Travel', fr: 'Voyage' },
+      details: [
+        { en: 'Passionate about discovering new cultures and cuisines', fr: 'Passionné par la découverte de nouvelles cultures et cuisines' },
+      ],
+    }
   ],
 
   // ===== PDF (optional — place your PDF in public/cv/) =====
